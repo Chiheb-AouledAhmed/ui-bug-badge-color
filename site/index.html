@@ -3,25 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Support Tickets</title>
+<title>System Status</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="topbar">
-  <div class="brand">DeskHub</div>
-  <nav class="nav"><a href="#">Tickets</a><a href="#">Customers</a></nav>
+  <div class="brand">StatusPage</div>
 </header>
 <main class="content">
-  <h1>Tickets</h1>
-  <table class="ticket-table">
-    <thead><tr><th>Subject</th><th>Status</th></tr></thead>
-    <tbody>
-      <tr><td>Login page throws 500</td><td><span class="badge badge-open">Open</span></td></tr>
-      <tr><td>Invoice PDF missing logo</td><td><span class="badge badge-pending">Pending</span></td></tr>
-      <tr><td>Password reset email delayed</td><td><span class="badge badge-resolved">Resolved</span></td></tr>
-      <tr><td>Dashboard chart not loading</td><td><span class="badge badge-resolved">Resolved</span></td></tr>
-    </tbody>
-  </table>
+  <h1>All Systems</h1>
+  <ul class="status-list">
+    <li><span class="dot dot-online"></span> API — Online</li>
+    <li><span class="dot dot-online"></span> Database — Online</li>
+    <li><span class="dot dot-cache"></span> Cache — Online</li>
+    <li><span class="dot dot-online"></span> CDN — Online</li>
+  </ul>
 </main>
 </body>
 </html>

@@ -1,16 +1,11 @@
 * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, Arial, sans-serif; }
+:root { --status-online: #22c55e; }
 body { background: #0f172a; color: #e2e8f0; }
-.topbar { display: flex; justify-content: space-between; align-items: center; padding: 16px 24px; background: #1e293b; }
-.brand { font-weight: 700; font-size: 18px; }
-.nav a { color: #cbd5e1; text-decoration: none; font-size: 14px; margin-left: 20px; }
+.topbar { padding: 16px 24px; background: #1e293b; font-weight: 700; }
 .content { padding: 24px; }
-.content h1 { margin-bottom: 16px; font-size: 22px; }
-
-.ticket-table { width: 100%; border-collapse: collapse; font-size: 14px; }
-.ticket-table th { text-align: left; padding: 10px 12px; color: #94a3b8; font-weight: 600; border-bottom: 1px solid #1e293b; }
-.ticket-table td { padding: 12px; border-bottom: 1px solid #1e293b; }
-
-.badge { display: inline-block; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 600; }
-.badge-open { background: #7f1d1d; color: #fecaca; }
-.badge-pending { background: #78350f; color: #fde68a; }
-.badge-resolved { background: #65a30d; color: #ecfccb; }
+.content h1 { margin-bottom: 16px; }
+.status-list { list-style: none; font-size: 15px; }
+.status-list li { padding: 10px 0; display: flex; align-items: center; gap: 10px; border-bottom: 1px solid #1e293b; }
+.dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+.dot-online { background: var(--status-online); }
+.dot-cache { background: #16a34a; }
